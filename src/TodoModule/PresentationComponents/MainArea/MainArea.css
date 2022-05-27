@@ -1,0 +1,53 @@
+.MainArea {
+    display: grid;
+}
+
+.description-wrapper {
+
+
+}
+.main-area-header{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: black;
+    margin: 40px;
+}
+.main-area-description{
+    width: 950px;
+    margin: 0 40px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 154px;
+    padding: 15px 11px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.history{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 373px 0 10px 40px;
+}
+.history-wrapper{
+    display: flex;
+    margin: 0 40px;
+    justify-content: space-between;
+    border-top: 1px solid #000000;;
+}
+.history-name{
+    font-size: 14px;
+    line-height: 17px;
+}
+.history-date{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+.ns {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #BBBBBB;
+    margin: 469px 350px;
+}
