@@ -3,15 +3,15 @@
 }
 
 .description-wrapper {
-
-
+    display: grid;
 }
 .main-area-header{
     font-weight: 900;
     font-size: 36px;
     line-height: 44px;
     color: black;
-    margin: 40px;
+    margin: 40px 0 30px 40px;
+    cursor: default;
 }
 .main-area-description{
     width: 950px;
@@ -23,11 +23,27 @@
     font-size: 16px;
     line-height: 19px;
 }
+.button-save{
+    width: 164px;
+    background: #6DBE75;
+    border-radius: 10px;
+    border: 1px solid #6DBE75;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 62px;
+    cursor: pointer;
+    color: white;
+    align-self: center;
+    align-items: flex-end;
+    margin-left: 850px;
+}
 .history{
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    margin: 373px 0 10px 40px;
+    margin: 273px 0 10px 40px;
+    cursor: default;
 }
 .history-wrapper{
     display: flex;
@@ -49,5 +65,5 @@
     font-size: 36px;
     line-height: 44px;
     color: #BBBBBB;
-    margin: 469px 350px;
+    margin: 269px 350px;
 }

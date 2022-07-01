@@ -1,29 +1,30 @@
-.form-create{
+.form-create {
     display: flex;
     align-items: center;
-margin-top: 408px;
     border-top: 2px solid #9A9A9A;
 }
-.create-input{
+
+.create-input {
     background: #FFFFFF;
     border-radius: 15px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    color: #BBBBBB;
     border: none;
     width: 75%;
     padding: 6px 0 42px 11px;
     margin: 10px 0 10px 15px;
 }
-.create-btn{
+
+.create-btn {
     width: 40px;
     height: 40px;
     background-color: #6DBE75;
     border-radius: 10px;
+    border: 1px solid #6DBE75;
     font-size: 36px;
     line-height: 35px;
     color: white;
- text-align: center;
+    text-align: center;
     margin-left: 15px;
 }

@@ -1,7 +1,11 @@
+.TodoForm{
+
+}
 .TodoFormHeader{
     padding: 20px 0 20px 20px;
     margin: 0;
     border-bottom: 2px solid #9A9A9A;
+    cursor: default;
 }
 .TodoFormInput{
     width: 87%;
@@ -11,7 +15,6 @@
     margin: 20px 14.5px;
     font-size: 12px;
     line-height: 26px;
-    color: #BBBBBB;
     padding-left: 20px;
     align-items: center;
 }
