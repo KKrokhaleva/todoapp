@@ -3,16 +3,26 @@ import {useState} from "react";
 
 
 export function TodoSearch ({ onFormSubmitHandler, createItem  }) {
-    const[item, setItem] = useState({title:'' , description:''})
+    const[item, setItem] = useState({title:''})
 
     const addNewItem= (e) => {
         e.preventDefault();
         const newItem = {
-            ...item, id:Date.now()
+            ...item,
+            id:Date.now() ,
+            description:"",
+            history: [{
+                field: "title",
+                action: "create",
+                prevValue: "",
+                currentValue: item.title,
+                appliedAt: new Date()
+            }]
         }
         createItem(newItem);
-        setItem({title: '' , description: ''})
+        setItem({title: ''});
     }
+
         return (
             <form className="form-create" onSubmit={onFormSubmitHandler}>
                 <input

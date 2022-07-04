@@ -18,7 +18,7 @@ const INITIAL_DATA_LIST = [
 export function Todo() {
 
     const [list, setList] = useState(INITIAL_DATA_LIST);
-    const [selectedTodo, setSelectedTodo] = useState({});
+    const [selectedTodo, setSelectedTodo] = useState(null);
     const [search,setSearch] = useState('');
 
     const searchedItems =  useMemo(() => {
@@ -37,7 +37,9 @@ export function Todo() {
 
     const onItemDeleteHandler = (id) => {
         setList(list.filter((todoItem) => todoItem.id !== id));
-        setSelectedTodo(selectedTodo.id=undefined);
+        if (selectedTodo.id===id) {
+            setSelectedTodo(null);
+        }
     }
 
 
@@ -47,6 +49,7 @@ export function Todo() {
         const itemIndex = editItem.findIndex(item => item.id ===changedItem.id);
         editItem.splice(itemIndex,1, changedItem);
         setList(editItem);
+        setSelectedTodo(changedItem);
     }
 
     return (
@@ -65,7 +68,7 @@ export function Todo() {
                 <TodoSearch createItem={createItem}/>
             </div>
 
-            { ( typeof selectedTodo.id ==='number')
+            { selectedTodo
                 ? <MainArea selectedTodo={selectedTodo} onEditComplete={onEditComplete}/>
                 : <h1 className={"ns"}>Nothing Selected</h1>
             }
